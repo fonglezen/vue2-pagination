@@ -84,7 +84,7 @@ export default {
     // 初始化，计算页码
     countPage(count) {
       var _t = this;
-
+      _t.nowpage = 0;
       var total_page = parseInt(count / _t.pageSize);
       if (count > _t.pageSize && count % _t.pageSize != 0) {
         total_page += 1;
